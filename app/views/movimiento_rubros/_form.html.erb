@@ -1,0 +1,62 @@
+<%= form_with(model: movimiento_rubro, class: "contents") do |form| %>
+  <% if movimiento_rubro.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(movimiento_rubro.errors.count, "error") %> prohibited this movimiento_rubro from being saved:</h2>
+
+      <ul>
+        <% movimiento_rubro.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :identificacion_rubro %>
+    <%= form.text_field :identificacion_rubro, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :identificacion_rubro_interno %>
+    <%= form.text_field :identificacion_rubro_interno, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :presupuesto_inicial %>
+    <%= form.text_field :presupuesto_inicial, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :codigo_dependencia %>
+    <%= form.number_field :codigo_dependencia, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :valor_movimiento %>
+    <%= form.text_field :valor_movimiento, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :tipo_movimiento %>
+    <%= form.text_field :tipo_movimiento, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :codigo_resolucion %>
+    <%= form.text_field :codigo_resolucion, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :fecha_resolucion %>
+    <%= form.date_field :fecha_resolucion, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :observacion_resolucion %>
+    <%= form.text_area :observacion_resolucion, rows: 4, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>

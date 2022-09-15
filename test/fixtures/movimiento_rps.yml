@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  identificacion_rubro: MyString
+  identificacion_rubro_interno: MyString
+  numero_rp: 1
+  concepto_movimiento_cdp: MyString
+  valor_movimento_rp: 1
+  saldo_rp: 1.5
+  fecha_del_movimiento_rp: 2022-09-15
+
+two:
+  identificacion_rubro: MyString
+  identificacion_rubro_interno: MyString
+  numero_rp: 1
+  concepto_movimiento_cdp: MyString
+  valor_movimento_rp: 1
+  saldo_rp: 1.5
+  fecha_del_movimiento_rp: 2022-09-15

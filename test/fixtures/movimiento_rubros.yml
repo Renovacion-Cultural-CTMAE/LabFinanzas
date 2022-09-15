@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  identificacion_rubro: MyString
+  identificacion_rubro_interno: MyString
+  presupuesto_inicial: 1.5
+  codigo_dependencia: 1
+  valor_movimiento: 1.5
+  tipo_movimiento: MyString
+  codigo_resolucion: MyString
+  fecha_resolucion: 2022-09-13
+  observacion_resolucion: MyText
+
+two:
+  identificacion_rubro: MyString
+  identificacion_rubro_interno: MyString
+  presupuesto_inicial: 1.5
+  codigo_dependencia: 1
+  valor_movimiento: 1.5
+  tipo_movimiento: MyString
+  codigo_resolucion: MyString
+  fecha_resolucion: 2022-09-13
+  observacion_resolucion: MyText

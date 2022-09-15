@@ -1,0 +1,2 @@
+class MovimientoRubro < ApplicationRecord
+end

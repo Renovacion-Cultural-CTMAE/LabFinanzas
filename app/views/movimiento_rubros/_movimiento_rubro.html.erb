@@ -1,0 +1,52 @@
+<div id="<%= dom_id movimiento_rubro %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro:</strong>
+    <%= movimiento_rubro.identificacion_rubro %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro interno:</strong>
+    <%= movimiento_rubro.identificacion_rubro_interno %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Presupuesto inicial:</strong>
+    <%= movimiento_rubro.presupuesto_inicial %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Codigo dependencia:</strong>
+    <%= movimiento_rubro.codigo_dependencia %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Valor movimiento:</strong>
+    <%= movimiento_rubro.valor_movimiento %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Tipo movimiento:</strong>
+    <%= movimiento_rubro.tipo_movimiento %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Codigo resolucion:</strong>
+    <%= movimiento_rubro.codigo_resolucion %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Fecha resolucion:</strong>
+    <%= movimiento_rubro.fecha_resolucion %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Observacion resolucion:</strong>
+    <%= movimiento_rubro.observacion_resolucion %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this movimiento rubro", movimiento_rubro, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this movimiento rubro', edit_movimiento_rubro_path(movimiento_rubro), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

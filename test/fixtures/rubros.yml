@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  identificacion_del_rubro: MyString
+  identificacion_rubro_interno: MyString
+  observacion: MyText
+  codigo_dependencia: 1
+  nombres_del_rubro: MyString
+
+two:
+  identificacion_del_rubro: MyString
+  identificacion_rubro_interno: MyString
+  observacion: MyText
+  codigo_dependencia: 1
+  nombres_del_rubro: MyString
