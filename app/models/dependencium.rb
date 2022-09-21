@@ -1,2 +1,0 @@
-class Dependencium < ApplicationRecord
-end

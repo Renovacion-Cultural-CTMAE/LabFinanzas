@@ -1,2 +1,0 @@
-class MovimientoCdp < ApplicationRecord
-end

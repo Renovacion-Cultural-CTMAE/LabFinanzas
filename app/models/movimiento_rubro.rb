@@ -1,2 +1,0 @@
-class MovimientoRubro < ApplicationRecord
-end

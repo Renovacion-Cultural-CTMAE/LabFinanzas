@@ -19,8 +19,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_15_174547) do
     t.string "tipo_de_movimiento_cdp"
     t.string "identificacion_del_rubro"
     t.string "identificacion_del_rubro_interno"
+    t.integer "rubro_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["rubro_id"], name: "index_cdps_on_rubro_id"
   end
 
   create_table "dependencia", force: :cascade do |t|
@@ -28,8 +30,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_15_174547) do
     t.string "nombre_dependencia"
     t.string "identificacio_rubro"
     t.string "identificacion_rubro_interno"
+    t.integer "rubro_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["rubro_id"], name: "index_dependencia_on_rubro_id"
   end
 
   create_table "movimiento_cdps", force: :cascade do |t|
@@ -40,8 +44,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_15_174547) do
     t.integer "valor_movimento_cdp"
     t.float "saldo_cdp"
     t.date "fecha_de_movimiento_del_cdp"
+    t.integer "cdp_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["cdp_id"], name: "index_movimiento_cdps_on_cdp_id"
   end
 
   create_table "movimiento_rps", force: :cascade do |t|
@@ -52,8 +58,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_15_174547) do
     t.integer "valor_movimento_rp"
     t.float "saldo_rp"
     t.date "fecha_del_movimiento_rp"
+    t.integer "rp_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["rp_id"], name: "index_movimiento_rps_on_rp_id"
   end
 
   create_table "movimiento_rubros", force: :cascade do |t|
@@ -66,8 +74,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_15_174547) do
     t.string "codigo_resolucion"
     t.date "fecha_resolucion"
     t.text "observacion_resolucion"
+    t.integer "rubro_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["rubro_id"], name: "index_movimiento_rubros_on_rubro_id"
   end
 
   create_table "rps", force: :cascade do |t|
@@ -79,8 +89,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_15_174547) do
     t.string "identificacion_del_rubro"
     t.string "identificacion_del_rubro_interno"
     t.integer "numero_cdp"
+    t.integer "cdp_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["cdp_id"], name: "index_rps_on_cdp_id"
   end
 
   create_table "rubros", force: :cascade do |t|

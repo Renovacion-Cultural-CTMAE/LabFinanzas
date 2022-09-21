@@ -1,2 +1,0 @@
-class Rp < ApplicationRecord
-end
