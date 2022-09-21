@@ -30,3 +30,13 @@
     <hr class="mt-6">
   <% end %>
 </div>
+
+  <%= link_to edit_centro_path(centro), class: "relative inline-block text-sm font-medium text-white group focus:outline-none focus:ring" do %>
+  <span class="absolute inset-0 border border-red-600 group-active:border-red-500"></span>
+  <span
+    class="block px-12 py-3 transition-transform bg-naranja border border-naranja-600 active:border-red-500 active:bg-azul-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
+    Editar este centro
+  </span>
+  <% end %>
+  <% end %>
+</div>
