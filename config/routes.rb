@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :items
   root "rubros#index"
   devise_for :users
   

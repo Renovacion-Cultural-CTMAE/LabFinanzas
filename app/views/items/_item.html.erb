@@ -1,0 +1,32 @@
+<div id="<%= dom_id item %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion:</strong>
+    <%= item.identificacion %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion interna:</strong>
+    <%= item.identificacion_interna %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Observacion:</strong>
+    <%= item.observacion %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Codigo dependencia:</strong>
+    <%= item.codigo_dependencia %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nombre rubro:</strong>
+    <%= item.nombre_rubro %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this item", item, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this item', edit_item_path(item), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
