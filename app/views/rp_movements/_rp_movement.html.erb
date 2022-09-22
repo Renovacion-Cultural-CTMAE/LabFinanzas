@@ -1,0 +1,42 @@
+<div id="<%= dom_id rp_movement %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro:</strong>
+    <%= rp_movement.identificacion_rubro %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro interno:</strong>
+    <%= rp_movement.identificacion_rubro_interno %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Numero rp:</strong>
+    <%= rp_movement.numero_rp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Concepto movimiento cdp:</strong>
+    <%= rp_movement.concepto_movimiento_cdp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Valor movimiento rp:</strong>
+    <%= rp_movement.valor_movimiento_rp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Saldo rp:</strong>
+    <%= rp_movement.saldo_rp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Fecha movimiento rp:</strong>
+    <%= rp_movement.fecha_movimiento_rp %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this rp movement", rp_movement, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this rp movement', edit_rp_movement_path(rp_movement), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

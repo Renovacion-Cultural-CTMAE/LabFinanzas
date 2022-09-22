@@ -1,0 +1,47 @@
+<div id="<%= dom_id rp %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Numero rp:</strong>
+    <%= rp.numero_rp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Valor rp:</strong>
+    <%= rp.valor_rp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Concepto rp:</strong>
+    <%= rp.concepto_rp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Valor movimiento rp:</strong>
+    <%= rp.valor_movimiento_rp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Tipo movimiento rp:</strong>
+    <%= rp.tipo_movimiento_rp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro:</strong>
+    <%= rp.identificacion_rubro %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro interno:</strong>
+    <%= rp.identificacion_rubro_interno %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Numero cdp:</strong>
+    <%= rp.numero_cdp %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this rp", rp, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this rp', edit_rp_path(rp), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

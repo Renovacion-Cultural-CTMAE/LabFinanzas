@@ -1,0 +1,42 @@
+<div id="<%= dom_id cdp %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Numero cdp:</strong>
+    <%= cdp.numero_cdp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Valor cdp:</strong>
+    <%= cdp.valor_cdp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Concepto cdp:</strong>
+    <%= cdp.concepto_cdp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Valor movimiento cdp:</strong>
+    <%= cdp.valor_movimiento_cdp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Tipo movimiento cdp:</strong>
+    <%= cdp.tipo_movimiento_cdp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro:</strong>
+    <%= cdp.identificacion_rubro %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro interno:</strong>
+    <%= cdp.identificacion_rubro_interno %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this cdp", cdp, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this cdp', edit_cdp_path(cdp), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

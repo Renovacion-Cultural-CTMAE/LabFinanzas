@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero_cdp: MyString
+  valor_cdp: 1.5
+  concepto_cdp: MyString
+  valor_movimiento_cdp: 1.5
+  tipo_movimiento_cdp: MyString
+  identificacion_rubro: MyString
+  identificacion_rubro_interno: MyString
+
+two:
+  numero_cdp: MyString
+  valor_cdp: 1.5
+  concepto_cdp: MyString
+  valor_movimiento_cdp: 1.5
+  tipo_movimiento_cdp: MyString
+  identificacion_rubro: MyString
+  identificacion_rubro_interno: MyString

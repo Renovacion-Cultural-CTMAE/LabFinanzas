@@ -1,0 +1,27 @@
+<div id="<%= dom_id dependence %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Codigo dependencia:</strong>
+    <%= dependence.codigo_dependencia %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nombre dependencia:</strong>
+    <%= dependence.nombre_dependencia %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro:</strong>
+    <%= dependence.identificacion_rubro %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro interno:</strong>
+    <%= dependence.identificacion_rubro_interno %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this dependence", dependence, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this dependence', edit_dependence_path(dependence), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

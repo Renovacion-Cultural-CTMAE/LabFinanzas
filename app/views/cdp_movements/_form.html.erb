@@ -1,0 +1,52 @@
+<%= form_with(model: cdp_movement, class: "contents") do |form| %>
+  <% if cdp_movement.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(cdp_movement.errors.count, "error") %> prohibited this cdp_movement from being saved:</h2>
+
+      <ul>
+        <% cdp_movement.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :identificacion_rubro %>
+    <%= form.text_field :identificacion_rubro, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :identificacion_rubro_interno %>
+    <%= form.text_field :identificacion_rubro_interno, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :numero_cdp %>
+    <%= form.number_field :numero_cdp, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :concepto_movimiento_cdp %>
+    <%= form.text_field :concepto_movimiento_cdp, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :valor_movimiento_cdp %>
+    <%= form.text_field :valor_movimiento_cdp, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :saldo_cdp %>
+    <%= form.text_field :saldo_cdp, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :fecha_movimiento_cdp %>
+    <%= form.date_field :fecha_movimiento_cdp, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>

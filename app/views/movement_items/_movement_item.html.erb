@@ -1,0 +1,52 @@
+<div id="<%= dom_id movement_item %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro:</strong>
+    <%= movement_item.identificacion_rubro %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro interno:</strong>
+    <%= movement_item.identificacion_rubro_interno %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Presupuesto inicial:</strong>
+    <%= movement_item.presupuesto_inicial %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Codigo dependencia:</strong>
+    <%= movement_item.codigo_dependencia %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Valor movimiento:</strong>
+    <%= movement_item.valor_movimiento %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Tipo movimiento:</strong>
+    <%= movement_item.tipo_movimiento %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Codigo resolucion:</strong>
+    <%= movement_item.codigo_resolucion %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Fecha resolucion:</strong>
+    <%= movement_item.fecha_resolucion %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Observacion resolucion:</strong>
+    <%= movement_item.observacion_resolucion %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this movement item", movement_item, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this movement item', edit_movement_item_path(movement_item), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
