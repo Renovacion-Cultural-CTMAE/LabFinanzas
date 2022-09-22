@@ -1,2 +1,0 @@
-class Rubro < ApplicationRecord
-end

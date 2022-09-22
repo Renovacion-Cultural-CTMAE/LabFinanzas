@@ -15,12 +15,12 @@ class CdpsTest < ApplicationSystemTestCase
     click_on "New cdp"
 
     fill_in "Concepto cdp", with: @cdp.concepto_cdp
-    fill_in "Identificacion del rubro", with: @cdp.identificacion_del_rubro
-    fill_in "Identificacion del rubro interno", with: @cdp.identificacion_del_rubro_interno
-    fill_in "Numero de cdp", with: @cdp.numero_de_cdp
-    fill_in "Tipo de movimiento cdp", with: @cdp.tipo_de_movimiento_cdp
-    fill_in "Valor del cdp", with: @cdp.valor_del_cdp
-    fill_in "Valor del movimiento cdp", with: @cdp.valor_del_movimiento_cdp
+    fill_in "Identificacion rubro", with: @cdp.identificacion_rubro
+    fill_in "Identificacion rubro interno", with: @cdp.identificacion_rubro_interno
+    fill_in "Numero cdp", with: @cdp.numero_cdp
+    fill_in "Tipo movimiento cdp", with: @cdp.tipo_movimiento_cdp
+    fill_in "Valor cdp", with: @cdp.valor_cdp
+    fill_in "Valor movimiento cdp", with: @cdp.valor_movimiento_cdp
     click_on "Create Cdp"
 
     assert_text "Cdp was successfully created"
@@ -32,12 +32,12 @@ class CdpsTest < ApplicationSystemTestCase
     click_on "Edit this cdp", match: :first
 
     fill_in "Concepto cdp", with: @cdp.concepto_cdp
-    fill_in "Identificacion del rubro", with: @cdp.identificacion_del_rubro
-    fill_in "Identificacion del rubro interno", with: @cdp.identificacion_del_rubro_interno
-    fill_in "Numero de cdp", with: @cdp.numero_de_cdp
-    fill_in "Tipo de movimiento cdp", with: @cdp.tipo_de_movimiento_cdp
-    fill_in "Valor del cdp", with: @cdp.valor_del_cdp
-    fill_in "Valor del movimiento cdp", with: @cdp.valor_del_movimiento_cdp
+    fill_in "Identificacion rubro", with: @cdp.identificacion_rubro
+    fill_in "Identificacion rubro interno", with: @cdp.identificacion_rubro_interno
+    fill_in "Numero cdp", with: @cdp.numero_cdp
+    fill_in "Tipo movimiento cdp", with: @cdp.tipo_movimiento_cdp
+    fill_in "Valor cdp", with: @cdp.valor_cdp
+    fill_in "Valor movimiento cdp", with: @cdp.valor_movimiento_cdp
     click_on "Update Cdp"
 
     assert_text "Cdp was successfully updated"

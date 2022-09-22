@@ -1,0 +1,42 @@
+<div id="<%= dom_id cdp_movement %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro:</strong>
+    <%= cdp_movement.identificacion_rubro %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Identificacion rubro interno:</strong>
+    <%= cdp_movement.identificacion_rubro_interno %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Numero cdp:</strong>
+    <%= cdp_movement.numero_cdp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Concepto movimiento cdp:</strong>
+    <%= cdp_movement.concepto_movimiento_cdp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Valor movimiento cdp:</strong>
+    <%= cdp_movement.valor_movimiento_cdp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Saldo cdp:</strong>
+    <%= cdp_movement.saldo_cdp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Fecha movimiento cdp:</strong>
+    <%= cdp_movement.fecha_movimiento_cdp %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this cdp movement", cdp_movement, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this cdp movement', edit_cdp_movement_path(cdp_movement), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

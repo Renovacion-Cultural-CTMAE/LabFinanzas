@@ -17,7 +17,7 @@ class RpsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create rp" do
     assert_difference("Rp.count") do
-      post rps_url, params: { rp: { concepto_rp: @rp.concepto_rp, identificacion_del_rubro: @rp.identificacion_del_rubro, identificacion_del_rubro_interno: @rp.identificacion_del_rubro_interno, numero_cdp: @rp.numero_cdp, numero_de_rp: @rp.numero_de_rp, tipo_de_movimiento_rp: @rp.tipo_de_movimiento_rp, valor_de_rp: @rp.valor_de_rp, valor_movimiento_rp: @rp.valor_movimiento_rp } }
+      post rps_url, params: { rp: { concepto_rp: @rp.concepto_rp, identificacion_rubro: @rp.identificacion_rubro, identificacion_rubro_interno: @rp.identificacion_rubro_interno, numero_cdp: @rp.numero_cdp, numero_rp: @rp.numero_rp, tipo_movimiento_rp: @rp.tipo_movimiento_rp, valor_movimiento_rp: @rp.valor_movimiento_rp, valor_rp: @rp.valor_rp } }
     end
 
     assert_redirected_to rp_url(Rp.last)
@@ -34,7 +34,7 @@ class RpsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update rp" do
-    patch rp_url(@rp), params: { rp: { concepto_rp: @rp.concepto_rp, identificacion_del_rubro: @rp.identificacion_del_rubro, identificacion_del_rubro_interno: @rp.identificacion_del_rubro_interno, numero_cdp: @rp.numero_cdp, numero_de_rp: @rp.numero_de_rp, tipo_de_movimiento_rp: @rp.tipo_de_movimiento_rp, valor_de_rp: @rp.valor_de_rp, valor_movimiento_rp: @rp.valor_movimiento_rp } }
+    patch rp_url(@rp), params: { rp: { concepto_rp: @rp.concepto_rp, identificacion_rubro: @rp.identificacion_rubro, identificacion_rubro_interno: @rp.identificacion_rubro_interno, numero_cdp: @rp.numero_cdp, numero_rp: @rp.numero_rp, tipo_movimiento_rp: @rp.tipo_movimiento_rp, valor_movimiento_rp: @rp.valor_movimiento_rp, valor_rp: @rp.valor_rp } }
     assert_redirected_to rp_url(@rp)
   end
 

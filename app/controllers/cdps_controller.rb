@@ -65,6 +65,6 @@ class CdpsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def cdp_params
-      params.require(:cdp).permit(:numero_de_cdp, :valor_del_cdp, :concepto_cdp, :valor_del_movimiento_cdp, :tipo_de_movimiento_cdp, :identificacion_del_rubro, :identificacion_del_rubro_interno)
+      params.require(:cdp).permit(:numero_cdp, :valor_cdp, :concepto_cdp, :valor_movimiento_cdp, :tipo_movimiento_cdp, :identificacion_rubro, :identificacion_rubro_interno)
     end
 end

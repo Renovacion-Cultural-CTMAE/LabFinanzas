@@ -17,7 +17,7 @@ class CdpsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create cdp" do
     assert_difference("Cdp.count") do
-      post cdps_url, params: { cdp: { concepto_cdp: @cdp.concepto_cdp, identificacion_del_rubro: @cdp.identificacion_del_rubro, identificacion_del_rubro_interno: @cdp.identificacion_del_rubro_interno, numero_de_cdp: @cdp.numero_de_cdp, tipo_de_movimiento_cdp: @cdp.tipo_de_movimiento_cdp, valor_del_cdp: @cdp.valor_del_cdp, valor_del_movimiento_cdp: @cdp.valor_del_movimiento_cdp } }
+      post cdps_url, params: { cdp: { concepto_cdp: @cdp.concepto_cdp, identificacion_rubro: @cdp.identificacion_rubro, identificacion_rubro_interno: @cdp.identificacion_rubro_interno, numero_cdp: @cdp.numero_cdp, tipo_movimiento_cdp: @cdp.tipo_movimiento_cdp, valor_cdp: @cdp.valor_cdp, valor_movimiento_cdp: @cdp.valor_movimiento_cdp } }
     end
 
     assert_redirected_to cdp_url(Cdp.last)
@@ -34,7 +34,7 @@ class CdpsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update cdp" do
-    patch cdp_url(@cdp), params: { cdp: { concepto_cdp: @cdp.concepto_cdp, identificacion_del_rubro: @cdp.identificacion_del_rubro, identificacion_del_rubro_interno: @cdp.identificacion_del_rubro_interno, numero_de_cdp: @cdp.numero_de_cdp, tipo_de_movimiento_cdp: @cdp.tipo_de_movimiento_cdp, valor_del_cdp: @cdp.valor_del_cdp, valor_del_movimiento_cdp: @cdp.valor_del_movimiento_cdp } }
+    patch cdp_url(@cdp), params: { cdp: { concepto_cdp: @cdp.concepto_cdp, identificacion_rubro: @cdp.identificacion_rubro, identificacion_rubro_interno: @cdp.identificacion_rubro_interno, numero_cdp: @cdp.numero_cdp, tipo_movimiento_cdp: @cdp.tipo_movimiento_cdp, valor_cdp: @cdp.valor_cdp, valor_movimiento_cdp: @cdp.valor_movimiento_cdp } }
     assert_redirected_to cdp_url(@cdp)
   end
 

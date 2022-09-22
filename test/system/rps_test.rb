@@ -15,13 +15,13 @@ class RpsTest < ApplicationSystemTestCase
     click_on "New rp"
 
     fill_in "Concepto rp", with: @rp.concepto_rp
-    fill_in "Identificacion del rubro", with: @rp.identificacion_del_rubro
-    fill_in "Identificacion del rubro interno", with: @rp.identificacion_del_rubro_interno
+    fill_in "Identificacion rubro", with: @rp.identificacion_rubro
+    fill_in "Identificacion rubro interno", with: @rp.identificacion_rubro_interno
     fill_in "Numero cdp", with: @rp.numero_cdp
-    fill_in "Numero de rp", with: @rp.numero_de_rp
-    fill_in "Tipo de movimiento rp", with: @rp.tipo_de_movimiento_rp
-    fill_in "Valor de rp", with: @rp.valor_de_rp
+    fill_in "Numero rp", with: @rp.numero_rp
+    fill_in "Tipo movimiento rp", with: @rp.tipo_movimiento_rp
     fill_in "Valor movimiento rp", with: @rp.valor_movimiento_rp
+    fill_in "Valor rp", with: @rp.valor_rp
     click_on "Create Rp"
 
     assert_text "Rp was successfully created"
@@ -33,13 +33,13 @@ class RpsTest < ApplicationSystemTestCase
     click_on "Edit this rp", match: :first
 
     fill_in "Concepto rp", with: @rp.concepto_rp
-    fill_in "Identificacion del rubro", with: @rp.identificacion_del_rubro
-    fill_in "Identificacion del rubro interno", with: @rp.identificacion_del_rubro_interno
+    fill_in "Identificacion rubro", with: @rp.identificacion_rubro
+    fill_in "Identificacion rubro interno", with: @rp.identificacion_rubro_interno
     fill_in "Numero cdp", with: @rp.numero_cdp
-    fill_in "Numero de rp", with: @rp.numero_de_rp
-    fill_in "Tipo de movimiento rp", with: @rp.tipo_de_movimiento_rp
-    fill_in "Valor de rp", with: @rp.valor_de_rp
+    fill_in "Numero rp", with: @rp.numero_rp
+    fill_in "Tipo movimiento rp", with: @rp.tipo_movimiento_rp
     fill_in "Valor movimiento rp", with: @rp.valor_movimiento_rp
+    fill_in "Valor rp", with: @rp.valor_rp
     click_on "Update Rp"
 
     assert_text "Rp was successfully updated"

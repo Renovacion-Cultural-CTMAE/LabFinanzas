@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
-  resources :movimiento_rps
+  resources :rp_movements
   resources :rps
-  resources :movimiento_cdps
+  resources :cdp_movements
   resources :cdps
-  resources :dependencia
-  resources :movimiento_rubros
-  resources :rubros
+  resources :dependences
+  resources :movement_items
+  resources :items
+  root "items#index"
   devise_for :users
+  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

@@ -65,6 +65,6 @@ class RpsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def rp_params
-      params.require(:rp).permit(:numero_de_rp, :valor_de_rp, :concepto_rp, :valor_movimiento_rp, :tipo_de_movimiento_rp, :identificacion_del_rubro, :identificacion_del_rubro_interno, :numero_cdp)
+      params.require(:rp).permit(:numero_rp, :valor_rp, :concepto_rp, :valor_movimiento_rp, :tipo_movimiento_rp, :identificacion_rubro, :identificacion_rubro_interno, :numero_cdp)
     end
 end
