@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :dependences
   resources :movement_items
   resources :items
-  root "home#index"
+  root "items#index"
   devise_for :users
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
