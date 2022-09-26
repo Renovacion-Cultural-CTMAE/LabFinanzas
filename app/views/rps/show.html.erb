@@ -10,6 +10,7 @@
     <div class="inline-block ml-2">
       <%= button_to 'Destroy this rp', rp_path(@rp), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
     </div>
-    <%= link_to 'Back to rps', rps_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Volver', rps_path, class: "ml-2 rounded-lg py-3 px-5 bg-naranja inline-block font-medium" %>
+    <%= link_to 'Añadir Movimiento', new_movement_rps_path, class: "ml-2 rounded-lg py-3 px-5 bg-naranja inline-block font-medium" %>
   </div>
 </div>
